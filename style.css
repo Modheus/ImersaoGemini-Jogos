@@ -84,19 +84,19 @@ section button:active {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    min-height: 95%;
+    align-items: center, stretch;
+    justify-content: center; 
 }
 
 .div-img {
     text-align: left;
-    height: 90%;
+    flex: 1;
 }
 
 .div-txt {
-    margin-top: -1em;
+    margin-top: -1.5em;
     padding-left: 2em;
+    flex: 3;
 }
 
 img {
