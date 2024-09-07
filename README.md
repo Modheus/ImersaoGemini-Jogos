@@ -37,7 +37,6 @@ Este projeto é uma página web simples que permite pesquisar e exibir jogos com
 
 ## Melhorias Futuras
 
-- Adicionar mais jogos à base de dados.
 - Melhorar o estilo e design da interface.
 - Implementar paginação ou rolagem infinita nos resultados da pesquisa.
 - Integração com APIs externas para expandir o conteúdo automaticamente.
