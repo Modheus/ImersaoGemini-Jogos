@@ -4,7 +4,7 @@
 /* Estiliza o corpo da página */
 body {
     font-family: "Chakra Petch", sans-serif; /* Define a fonte padrão */
-    background-color: #353333e6; /* Cor de fundo da página */
+    background-color: #232728; /* Cor de fundo da página */
     display: flex; /* Usa Flexbox para layout */
     flex-direction: column; /* Alinha os itens na vertical */
     align-items: center; /* Centraliza os itens horizontalmente */
@@ -33,13 +33,14 @@ section {
 /* Estiliza os inputs dentro das seções */
 section input {
     width: 100%; /* Largura dos inputs ajustado para largura total do container */
+    background-color: #181a1b; /* Cor do fundo */
+    color: #e8e6e3; /* Cor do texto */
     min-width: 25rem; /* Define o tamanho mínimo */
     max-width: 25rem; /* Define o máximo para inputs */
     border: none; /* Remove a borda padrão */
     padding: 1rem; /* Espaçamento interno */
     border-radius: 1.5rem; /* Borda arredondada */
     margin-bottom: 1rem; /* Espaçamento abaixo dos inputs */
-    color: #45474B; /* Cor do texto */
     font-size: 1rem; /* Tamanho da fonte */
     box-sizing: border-box; /* Inclui padding e border na largura total */
 }
@@ -49,7 +50,7 @@ section button {
     padding: 0.8rem 1.2rem; /* Espaçamento interno do botão */
     border: none; /* Remove a borda padrão */
     border-radius: 1.5rem; /* Borda arredondada */
-    background-color: #d1b132f3; /* Cor de fundo do botão */
+    background-color: #b3982df3; /* Cor de fundo do botão */
     color: #F5F7F8; /* Cor do texto do botão */
     font-size: 1rem; /* Tamanho da fonte */
     cursor: pointer; /* Muda o cursor para indicar que é clicável */
@@ -77,9 +78,13 @@ section button:active {
     border-radius: 0.6rem; /* Borda arredondada */
 }
 
+.resultados-pesquisa p {
+    color: #f0f2f5;
+}
+
 /* Estiliza cada item de resultado */
 .item-resultado {
-    background: #FFFFFF; /* Cor de fundo dos itens */
+    background: #181a1b; /* Cor de fundo dos itens */
     border-radius: 0.6rem; /* Borda arredondada */
     padding: 1rem; /* Espaçamento interno */
     margin-bottom: 1rem; /* Espaçamento abaixo dos itens */
@@ -110,7 +115,7 @@ img {
 /* Estiliza os títulos dentro dos itens de resultado */
 .item-resultado h2 {
     font-size: 1.5rem; /* Tamanho da fonte */
-    color: #222831; /* Cor do texto */
+    color: rgb(206, 202, 195); /* Cor do texto */
 }
 
 /* Estiliza os links dentro dos itens de resultado */
@@ -126,15 +131,15 @@ img {
 
 /* Estiliza a descrição meta dentro dos itens de resultado */
 .descricao-meta {
-    color: #45474B; /* Cor do texto */
+    color: #f0f2f5; /* Cor do texto */
     margin: 0.5rem 0; /* Margem acima e abaixo */
     text-align: justify; /*Justifica o conteúdo*/
 }
 
 /* Estiliza o rodapé da página */
 footer {
-    background-color: #F5F7F8; /* Cor de fundo do rodapé */
-    color: #45474B; /* Cor do texto */
+    background-color: rgb(25, 32, 36); /* Cor de fundo do rodapé */
+    color: #BBB5AC; /* Cor do texto */
     text-align: center; /* Alinha o texto ao centro */
     padding: 0; /* Espaçamento interno */
     width: 100%; /* Largura total da página */
