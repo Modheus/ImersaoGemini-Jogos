@@ -32,7 +32,9 @@ section {
 
 /* Estiliza os inputs dentro das seções */
 section input {
-    width: 30rem; /* Largura dos inputs */
+    width: 100%; /* Largura dos inputs ajustado para largura total do container */
+    min-width: 25rem; /* Define o tamanho mínimo */
+    max-width: 25rem; /* Define o máximo para inputs */
     border: none; /* Remove a borda padrão */
     padding: 1rem; /* Espaçamento interno */
     border-radius: 1.5rem; /* Borda arredondada */
@@ -67,7 +69,7 @@ section button:active {
 
 /* Estiliza a caixa de resultados da pesquisa */
 .resultados-pesquisa {
-    width: 60rem; /* Largura máxima da caixa de resultados */
+    max-width: 60rem; /* Largura máxima definida */
     height: 46vh; /* Altura máxima da caixa de resultados */
     overflow-y: auto; /* Adiciona rolagem vertical se necessário */
     margin-top: 1rem; /* Espaçamento acima da caixa de resultados */
@@ -100,8 +102,9 @@ section button:active {
 }
 
 img {
-    width: 15em;
-    height: 100%;
+    width: 100%;
+    max-width: 15em;
+    height: auto; /* Ajuste proporcional da imagem */
 }
 
 /* Estiliza os títulos dentro dos itens de resultado */
@@ -140,6 +143,7 @@ footer {
     font-size: 1rem; /* Tamanho da fonte */
 }
 
+/* Responsividade para tablets */
 @media (max-width: 768px) {
     h1 {
         font-size: 2rem; /* Tamanho da fonte em telas menores */
@@ -147,7 +151,7 @@ footer {
     }
 
     section input {
-        width: 25rem; /* Largura dos inputs em telas menores */
+        max-width: 25rem; /* Largura dos inputs em telas menores */
         padding: 0.8rem; /* Espaçamento interno em telas menores */
     }
 
@@ -170,7 +174,11 @@ footer {
     }
 
     section input {
-        width: 17rem; /* Largura total dos inputs em telas pequenas */
+        width: 24rem;
+        max-width: 80%; /* Garante que a barra não ultrapasse 100% da tela */
+        min-width: 80%; /* Remove limites mínimos fixos */
+        padding: 0.8rem; /* Espaçamento interno do input */
+        box-sizing: border-box; /* Garante que padding seja considerado na largura total */
     }
 
     section button {
@@ -183,11 +191,28 @@ footer {
         height: 50vh; /* Altura da caixa de resultados em telas pequenas */
     }
 
+    .item-resultado {
+        flex-direction: column; /* Alterado para coluna em telas pequenas */
+        text-align: center;
+    }
+
+    .div-img, .div-txt {
+        padding: 0; /* Remove espaçamento excessivo */
+        text-align: center; /* Alinha o texto ao centro */
+    }
+
+    img {
+        max-width: 100%; /* Largura máxima da imagem no container */
+        height: auto;
+        transform: scale(0.9); /*Diminui o tamanho da imagem em celulares*/
+    }
+
     .item-resultado h2 {
         font-size: 1.1rem; /* Tamanho da fonte dos títulos em telas pequenas */
     }
 
     footer {
         font-size: 0.9rem; /* Tamanho da fonte do rodapé em telas pequenas */
+        bottom: 0; /* Alinha ao fundo da página */
     }
 }
