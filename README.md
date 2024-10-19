@@ -29,6 +29,7 @@ Este projeto é uma página web simples que permite pesquisar e exibir jogos com
 ## Como Usar
 
 Para ver o funcionamento da página, basta acessar o link do deploy na plataforma Vercel:
+
 https://imersao-gemini-jogos.vercel.app/
 
 ---
