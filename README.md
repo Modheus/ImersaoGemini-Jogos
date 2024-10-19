@@ -28,17 +28,7 @@ Este projeto é uma página web simples que permite pesquisar e exibir jogos com
 
 ## Como Usar
 
-1. Faça o download dos arquivos ou clone o repositório:
-    ```bash
-    git clone https://github.com/seu-usuario/seu-repositorio.git
-    ```
-2. Abra o arquivo `index.html` em um navegador da web.
-3. Utilize o campo de pesquisa para encontrar jogos com base em título ou descrição.
-
-## Melhorias Futuras
-
-- Melhorar o estilo e design da interface.
-- Implementar paginação ou rolagem infinita nos resultados da pesquisa.
-- Integração com APIs externas para expandir o conteúdo automaticamente.
+Para ver o funcionamento da página, basta acessar o link do deploy na plataforma Vercel:
+https://imersao-gemini-jogos.vercel.app/
 
 ---
