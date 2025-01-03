@@ -10,6 +10,7 @@ body {
     align-items: center; /* Centraliza os itens horizontalmente */
     justify-content: center; /* Centraliza os itens verticalmente */
     height: 100vh; /* Preenche a altura total da viewport */
+    position: relative; /*posição do body para que o footer não fique relativo a viewport no mobile*/
     margin: 0; /* Remove a margem padrão */
     padding: 0; /* Remove o padding padrão */
 }
@@ -71,9 +72,9 @@ section button:active {
 /* Estiliza a caixa de resultados da pesquisa */
 .resultados-pesquisa {
     max-width: 60rem; /* Largura máxima definida */
-    height: 46vh; /* Altura máxima da caixa de resultados */
+    height: 55vh; /* Altura máxima da caixa de resultados */
     overflow-y: auto; /* Adiciona rolagem vertical se necessário */
-    margin-top: 1rem; /* Espaçamento acima da caixa de resultados */
+    margin-top: 0.5rem; /* Espaçamento acima da caixa de resultados */
     padding: 1rem; /* Espaçamento interno */
     border-radius: 0.6rem; /* Borda arredondada */
 }
@@ -87,7 +88,7 @@ section button:active {
     background: #181a1b; /* Cor de fundo dos itens */
     border-radius: 0.6rem; /* Borda arredondada */
     padding: 1rem; /* Espaçamento interno */
-    margin-bottom: 1rem; /* Espaçamento abaixo dos itens */
+    margin-bottom: 0.5rem; /* Espaçamento abaixo dos itens */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
     display: flex;
     flex-direction: row;
@@ -98,6 +99,8 @@ section button:active {
 .div-img {
     text-align: left;
     flex: 1;
+    display: flex;
+    align-items: center;
 }
 
 .div-txt {
@@ -193,12 +196,16 @@ footer {
 
     .resultados-pesquisa {
         width: 90%; /* Largura da caixa de resultados em telas pequenas */
-        height: 50vh; /* Altura da caixa de resultados em telas pequenas */
+        height: 55vh; /* Altura da caixa de resultados em telas pequenas */
     }
 
     .item-resultado {
         flex-direction: column; /* Alterado para coluna em telas pequenas */
         text-align: center;
+    }
+
+    .item-resultado a {
+        text-decoration: underline white;
     }
 
     .div-img, .div-txt {

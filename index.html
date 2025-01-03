@@ -12,12 +12,12 @@
     </header>
 
     <main>
-        <section>
+        <section aria-label="Seção de pesquisa">
             <input type="text" placeholder="Digite o nome ou descrição do jogo" id="campo-pesquisa" onkeydown="if(event.keyCode == 13){ pesquisar();}">
             <button onclick="pesquisar()">Pesquisar</button>
         </section>
 
-        <section class="resultados-pesquisa" id="resultados-pesquisa">
+        <section aria-label="Seção de resultados" class="resultados-pesquisa" id="resultados-pesquisa">
         </section>
     </main>
     <footer>
