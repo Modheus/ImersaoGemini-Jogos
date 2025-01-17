@@ -1,5 +1,7 @@
 # Projeto de Busca de Jogos
 
+![screenshot da página de busca](GamesearchScreenshot.png)
+
 Este projeto é uma página web simples que permite pesquisar e exibir jogos com base no título ou descrição. O sistema é alimentado por uma base de dados de jogos e permite filtrar os resultados de acordo com o termo de busca inserido pelo usuário.
 
 ## Funcionalidades
